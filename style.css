@@ -1,0 +1,440 @@
+body {
+  height: 700px;
+  width: 100%;
+  font-family: sans-serif;
+  /* border: 2px solid rgb(219, 53, 53); */
+}
+.main {
+  height: 600px;
+  width: 1000px;
+  display: flex;
+  background: rgb(60, 59, 135);
+  /* border: 7px solid white; */
+}
+.left-side {
+  width: 300px;
+  height: 500px;
+  display: flex;
+}
+.img-bg {
+  width: 80px;
+  height: 420px;
+  animation: disply 2s ease-in-out;
+}
+.img-sml {
+  width: 90px;
+  height: 310px;
+  animation: slid 4s ease-in-out;
+}
+.str {
+  width: 70px;
+  height: 230px;
+  animation: slid1 6s ease-in-out;
+}
+.middle {
+  width: 400px;
+  height: 500px;
+}
+.chand {
+  margin-top: 15px;
+  margin-left: 120px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(244, 206, 12);
+}
+.moon {
+  position: absolute;
+  top: 15px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: rgb(60, 59, 135);
+
+  /* transform: translateX(10px); */
+  animation: mn 10s ease-in-out forwards;
+}
+.mubarak {
+  position: relative;
+  margin-top: 30px;
+  height: 200px;
+  width: 400px;
+  border-radius: 12px;
+  text-align: center;
+  color: rgb(223, 223, 66);
+  animation: daba 2s ease-in-out 5s forwards;
+  /* box-shadow: 0 0 1px rgb(244, 206, 12); */
+  background: transparent;
+}
+.tlc {
+  height: 35px;
+  width: 35px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background: rgb(244, 206, 12);
+  display: table;
+  position: absolute;
+  top: 165px;
+  left: 295px;
+  animation: tb 8s ease-in-out;
+}
+.blc {
+  height: 35px;
+  width: 35px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background: rgb(244, 206, 12);
+  display: table;
+  position: absolute;
+  bottom: 390px;
+  left: 295px;
+  animation: bt 8s ease-in-out;
+}
+.trc {
+  height: 35px;
+  width: 35px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background: rgb(244, 206, 12);
+  display: table;
+  position: absolute;
+  top: 165px;
+  right: 860px;
+  animation: tb 8s ease-in-out;
+}
+.brc {
+  height: 35px;
+  width: 35px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background: rgb(244, 206, 12);
+  display: table;
+  position: absolute;
+  bottom: 390px;
+  right: 860px;
+  animation: bt 8s ease-in-out;
+}
+.card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  animation: flip 15s ease-in-out 7s;
+}
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+/* .card:hover {
+  transform: rotateY(180deg);
+} */
+
+.line1 {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  animation: english 12s ease-in-out forwards;
+}
+.line2 {
+  margin: 0;
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  animation: urdu 12s ease-in-out forwards;
+}
+
+.right-side {
+  padding-left: 50px;
+  width: 300px;
+  height: 500px;
+  display: flex;
+}
+
+.stars1,
+.stars2,
+.stars3,
+.stars4,
+.stars5,
+.stars6,
+.stars7,
+.stars8 {
+  height: 35px;
+  width: 35px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background: rgb(244, 206, 12);
+  display: table;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.stars1 {
+  position: absolute;
+  top: 58%;
+  left: 2%;
+  animation: taray1 17s ease-in-out forwards;
+}
+.stars2 {
+  position: absolute;
+  top: 42%;
+  left: 7.3%;
+  animation: taray2 17s ease-in-out forwards;
+}
+.stars3 {
+  position: absolute;
+  /* top: 70%;
+  left: 25%; */
+  animation: star3 17s ease-in-out forwards;
+}
+.stars4 {
+  position: absolute;
+  /* top: 70%;
+  left: 30%; */
+  animation: star4 17s ease-in-out forwards;
+}
+.stars5 {
+  position: absolute;
+  animation: star5 17s ease-in-out forwards;
+
+  /* top: 70%;
+  left: 35%; */
+}
+/* .stars6 {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+} */
+.stars7 {
+  position: absolute;
+  /* top: 42%;
+  left: 54%; */
+  animation: taray3 17s ease-in-out forwards;
+}
+.stars8 {
+  position: absolute;
+  /* top: 58%;
+  left: 59.7%; */
+  animation: taray4 17s ease-in-out forwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes tb {
+  0% {
+    top: -1px;
+  }
+  100% {
+    top: 165px;
+  }
+}
+@keyframes bt {
+  0% {
+    bottom: 240px;
+  }
+  100% {
+    bottom: 390px;
+  }
+}
+
+@keyframes daba {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(244, 206, 12);
+  }
+}
+
+@keyframes disply {
+  0% {
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    height: 420px;
+    width: 80px;
+  }
+}
+
+@keyframes slid {
+  0% {
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    height: 310px;
+    width: 90px;
+  }
+}
+@keyframes slid1 {
+  0% {
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    height: 230px;
+    width: 70px;
+  }
+}
+
+@keyframes mn {
+  0% {
+    transform: translateX();
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes english {
+  0% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+@keyframes urdu {
+  0% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 27px;
+  }
+}
+
+@keyframes taray1 {
+  0% {
+    top: -1%;
+  }
+  100% {
+    top: 58%;
+    left: 2%;
+  }
+}
+@keyframes taray2 {
+  0% {
+    top: -1%;
+  }
+  100% {
+    top: 42%;
+    left: 7.3%;
+  }
+}
+@keyframes taray3 {
+  0% {
+    top: -1%;
+    left: 54%;
+  }
+  100% {
+    top: 42%;
+    left: 54%;
+  }
+}
+
+@keyframes taray4 {
+  0% {
+    top: -1%;
+    left: 59.7%;
+  }
+  100% {
+    top: 58%;
+    left: 59.7%;
+  }
+}
+@keyframes star3 {
+  0% {
+    top: 0%;
+    left: 30%;
+  }
+  100% {
+    top: 70%;
+    left: 25%;
+  }
+}
+@keyframes star4 {
+  0% {
+    top: 0%;
+    left: 30%;
+  }
+  100% {
+    top: 70%;
+    left: 30%;
+  }
+}
+@keyframes star5 {
+  0% {
+    top: 0%;
+    left: 30%;
+  }
+  100% {
+    top: 70%;
+    left: 35%;
+  }
+}
